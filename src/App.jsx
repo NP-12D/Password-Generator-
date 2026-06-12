@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route to="/" element={<PasswordGenerator />} />
+        <Route path="/" element={<PasswordGenerator />} />
       </Routes>
     </>
   );
