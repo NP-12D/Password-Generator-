@@ -1,9 +1,6 @@
-import { useState } from "react";
 import styled from "styled-components";
 
-export default function CharacterLength() {
-  const [length, setLength] = useState(10);
-  const sliderPercentage = (length / 20) * 100;
+export default function CharacterLength({length,onChange}) {
 
   return (
     <Container>
@@ -16,8 +13,7 @@ export default function CharacterLength() {
         min="0"
         max="20"
         value={length}
-        onChange={(e) => setLength(Number(e.target.value))}
-        sliderPercentage={sliderPercentage}
+        onChange={(e) => onChange(Number(e.target.value))}
       />
     </Container>
   );
