@@ -29,7 +29,6 @@ const CheckboxGroup = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 32px;
 `;
 
 const CheckboxContainer = styled.label`
@@ -47,8 +46,8 @@ const CheckboxContainer = styled.label`
   line-height: 100%;
   letter-spacing: 0px;
   color: rgba(230, 229, 234, 1);
-  @media (max-width: 480px) {
-    font-size: 16px;
+  @media (max-width: 500px) {
+    font-size: 15px;
   }
 `;
 

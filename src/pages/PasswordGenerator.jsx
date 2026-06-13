@@ -8,20 +8,19 @@ export default function PasswordGenerator() {
     <>
       <Main>
         <PasswordDisplay password={password} />
-       <OptionsContainer setPassword={setPassword} />
-
-
+        <OptionsContainer setPassword={setPassword} />
       </Main>
     </>
   );
 }
 const Main = styled.main`
+  padding-block: 40px;
   width: 100%;
   min-height: 100vh;
   background-color: rgba(8, 7, 11, 1);
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:31px;
+  gap: 31px;
 `;

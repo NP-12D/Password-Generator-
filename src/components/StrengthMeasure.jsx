@@ -23,17 +23,15 @@ export default function StrengthMeasure({ strength }) {
 
 const StrengthContainer = styled.div`
   background-color: #18171f;
-  padding: 24px 32px;
+  padding: 20px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
   text-transform: uppercase;
   box-sizing: border-box;
 
   @media (max-width: 480px) {
     padding: 16px;
-    margin-bottom: 24px;
   }
 `;
 

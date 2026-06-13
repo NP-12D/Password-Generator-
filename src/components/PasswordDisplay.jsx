@@ -30,7 +30,9 @@ const PasswordText = styled.h2`
   font-size: 32px;
   font-weight: 700;
   color: ${({ $placeholder }) => ($placeholder ? "#4F4E5E" : "#E6E5EA")};
- 
+   @media screen and (max-width:600px) {
+    font-size:16px;
+  }
  
 `;
 
