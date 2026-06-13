@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import PasswordDisplay from "../components/PasswordDisplay";
 import OptionsContainer from "../components/OptionsContainer";
+import { useState } from "react";
 export default function PasswordGenerator() {
+  const [password, setPassword] = useState("");
   return (
     <>
       <Main>
-       <PasswordDisplay ></PasswordDisplay>
-       <OptionsContainer/>
+        <PasswordDisplay password={password} />
+       <OptionsContainer setPassword={setPassword} />
+
+
       </Main>
     </>
   );
