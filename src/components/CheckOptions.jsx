@@ -15,8 +15,8 @@ export default function Options({ options, handleCheckboxChange }) {
           {opt.label}
           <HiddenCheckbox
             type="checkbox"
-            checked={options?.[opt.id] ?? false}
-            onChange={() => handleCheckboxChange?.(opt.id)}
+            checked={options[opt.id] ?? false}
+            onChange={() => handleCheckboxChange(opt.id)}
           />
           <Checkmark />
         </CheckboxContainer>

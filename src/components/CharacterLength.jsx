@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default function CharacterLength({length,onChange}) {
-
+const percentage = (length / 20) * 100;
   return (
     <Container>
       <Header>
@@ -14,6 +14,7 @@ export default function CharacterLength({length,onChange}) {
         max="20"
         value={length}
         onChange={(e) => onChange(Number(e.target.value))}
+        sliderPercentage={percentage}
       />
     </Container>
   );
